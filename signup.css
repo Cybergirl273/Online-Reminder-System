@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.left-half {
+  display: flex;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.left-half::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #FF69B4, #8A2BE2);
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.left-half img {
+  position: relative;
+  z-index: 1; /* Update the z-index */
+}
+
+
+.right-half {
+  display: flex;
+  flex: 1;
+  background-color: white;
+}
+
+.right-half-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.right-half-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding-top: 50px; /* Adjust the padding as desired */
+}
+
+.right-half-content h2 {
+  margin-bottom: 20px; /* Adjust the margin as desired */
+}
+.right-half-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-half-content form .form-control {
+  margin-bottom: 20px;
+}
+
+.right-half-content form .btn-primary {
+  background-color: #FF69B4;
+  border-color: #fa9ac5;
+}
+.form-control:hover {
+  /* Desired hover styles */
+  border-color: #ff6384; /* Example: change border color */
+  box-shadow: 0 0 5px rgba(255, 99, 132, 0.5); /* Example: add box shadow */
+}
+

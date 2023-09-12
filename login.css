@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  height: 80vh;
+  margin: 10vh auto;
+  display: flex;
+}
+
+.left-half {
+  flex: 1;
+  background-color: white;
+}
+
+.right-half {
+  flex: 1;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(183, 140, 162, 0.5), rgba(188, 166, 209, 0.5)); /* Adjust the color and opacity as needed */
+}
+
+.right-half img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.quote h2 {
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.login-btn {
+  background-color: var(--primary-color);
+}
+.container {
+  display: flex;
+}
+
+.left-half {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.input-icon {
+  position: relative;
+}
+
+.input-icon i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #161313;
+}
+.input-icon {
+  position: relative;
+  margin-bottom: 15px; /* Add space between input fields */
+}
+
+.input-icon i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #0e0c0c;
+  padding: 5px; 
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.input-icon input {
+  width: 120%;
+  padding-left: 50px; 
+}
+.btn-primary {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff6384; /* Desired hover background color */
+  color: #fff; /* Desired hover text color */
+}
+.form-control:hover {
+  /* Desired hover styles */
+  border-color: #ff6384; /* Example: change border color */
+  box-shadow: 0 0 5px rgba(255, 99, 132, 0.5); /* Example: add box shadow */
+}
+
+
+
+
+
+
